@@ -1,0 +1,33 @@
+name: Deploy Chat App
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18
+
+    - name: Install Angular client and build
+      run: |
+        cd client
+        npm install
+        npm run build -- --configuration production
+
+    - name: Install server dependencies
+      run: |
+        cd server
+        npm install
+
+    - name: Deploy to Render/Heroku
+      run: |
+        echo "Add deployment commands here (Heroku CLI, Render CLI, or rsync)"
