@@ -1,0 +1,25 @@
+{
+  "name": "small-chatgpt-client",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "ng serve --open --proxy-config proxy.conf.json",
+    "build": "ng build"
+  },
+  "dependencies": {
+    "@angular/animations": "^16.0.0",
+    "@angular/common": "^16.0.0",
+    "@angular/compiler": "^16.0.0",
+    "@angular/core": "^16.0.0",
+    "@angular/forms": "^16.0.0",
+    "@angular/platform-browser": "^16.0.0",
+    "@angular/platform-browser-dynamic": "^16.0.0",
+    "@angular/router": "^16.0.0",
+    "rxjs": "^7.8.0",
+    "zone.js": "^0.13.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.6",
+    "@angular/cli": "^16.0.0"
+  }
+}

@@ -1,0 +1,10 @@
+.chat-wrap { max-width:720px; margin:24px auto; border:1px solid #eee; padding:12px; border-radius:8px }
+.messages { min-height:300px; max-height:60vh; overflow:auto; padding-bottom:12px }
+.msg { margin:8px 0; display:flex }
+.msg.user { justify-content:flex-end }
+.msg.bot { justify-content:flex-start }
+.bubble { padding:8px 12px; border-radius:12px; background:#f1f1f1; max-width:70% }
+.msg.user .bubble { background:#cfe9ff }
+.input-row { display:flex; gap:8px; margin-top:12px }
+input { flex:1; padding:8px }
+button { padding:8px 12px }

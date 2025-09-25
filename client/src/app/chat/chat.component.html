@@ -1,0 +1,12 @@
+<div class="chat-wrap">
+  <div class="messages">
+    <div *ngFor="let m of messages" class="msg" [ngClass]="m.from">
+      <div class="bubble">{{ m.text }}</div>
+    </div>
+  </div>
+
+  <div class="input-row">
+    <input [(ngModel)]="input" (keydown.enter)="send()" placeholder="Say something..." />
+    <button (click)="send()" [disabled]="loading">Send</button>
+  </div>
+</div>
